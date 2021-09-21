@@ -1,52 +1,38 @@
-# Capstone_Project
-NLP Capstone project
+# Automated Ticket Allocation
 
-# Objective:
-1.To undertake a multi-faceted project that demonstrates your understanding and mastery of the key conceptual and technological aspects of Deep Learning.
+---
 
-2.To develop an understanding of how challenging human-level problems can be approached and solved using a combination of tools and techniques.
+This project aims to provide an effective solution to the mundane task of assigning user
+tickets to relevant support groups. This is supposed to be a generic solution that can be
+applied to custom datasets from different platforms such as ZenDesk, AzureDesk or 
+ServiceNow.
 
-3.To understand current scenarios in deep learning, understand the practicalities and the trade-offs that need to be made when solving a problem in real life.Milestones:
+## Get Started
+- Sample dataset(incidents.csv) given in the "data" directory can be used to understand the
+flow of the code and test pre-trained model(available in the "data" directory).
+- Project is divided into 3 Jupyter notebooks to allow for user customisation, these should
+be used in a specific sequence:
 
-This project has 2 milestones. You get 3 weeks for completing each milestone. 
+### EDA
+    - This file provides code for data exploration, helps us spot key features from in the
+      data.
+    - Idea is to feed the dataset as an input to this file and observe common patterns as
+      well anamolies in the data.
 
-The 1st milestone should be submitted as part of the interim report.
+### Feature Engineering
+    - Use the insights gained after EDA and then trigger this file to extract features
+      from the dataset against which the model can be trained.
+    - Specify any acronyms or words explicitly as reserved keywords, if you wish to
+      emphasise on them(should be discovered in EDA).
 
-# 1st Milestone:
+### Incident Allocation
+    - Once a feature set has been generated, this file will help us train and generated
+      models that will be capable of predicting a target "Assignment Group".
+    - Validate your results based on your training & testing set and improvise as needed.
 
- 1.Problem interpretation
 
-    a.Understand the data
-    b.Make an abstract or an overview based on your approach
-    c.Break the problem into smaller tasksDiscuss among your teammates and share responsibilities
+## An exception
+    - A simple rule based approach can also be taken to further simplify the process in
+      some special cases, to be able to do that refer to the fourth file called
+      "deterministic_rules.ipynb"
 
- 2.Data analysis and preprocessing: 
-
- Visual displays are powerful when used well, so think carefully about the information the display.Include any insightful visualization   Share and explain particularly meaningful features, interactions or summary of data
-        
-       a. Display examples to input in your model
-        
-       b. Explain changes to be incorporated into data so that it becomes ready for the model
-        
-3.Modeling What kind of neural network you have used and why?
-        
-        a. What progress you have made towards your intended solution?
-        
-# 2nd Milestone
-
-4.Model evaluation
-  
-  Describe how you will proceed with the analysis
-  
-          a.Compare different models and choose which model to use 
-          
-          b.Do hyper-parameter tuning of your mode
-          
-          c.How will you build on your initial analysis to increase the accuracy of your model
-          
-5.Presentation and Report
-  
-          a.You should start preparing the final report at least 2 weeks prior to the project completion date.
-          
-          b.Teams should send a draft Last of the project before the last session to the mentor and get the necessary inputs for submission.
-          c.The expectations for the final report will be included in your Capstone course
